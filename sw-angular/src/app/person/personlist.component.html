@@ -1,0 +1,19 @@
+<h1>Sprint Dashboard</h1>
+<section *ngIf="people" class = "panel-body">
+	<table class = "table-striped table-bordered table-hover table-condensed" border="1">
+		<thead>
+			<th>Employee Name</th>
+			<th>Designation</th>
+			<th>Total Hours worked</th>
+			<th>Rate</th>
+			<th>Total Pay</th>
+		</thead>
+		<tr *ngFor="let person of people">
+			<td><a href="#" [routerLink]="['/person', person.id]">
+			{{person.name}} </a>&nbsp;&nbsp;</td>
+			<td>{{person.haircolor}}</td>
+			<td>{{person.totalHours}}</td>
+			<td>{{person.rate}}</td>
+			<td>{{person.totalPay}}</td>
+	</table>
+</section>

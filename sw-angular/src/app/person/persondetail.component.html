@@ -1,0 +1,29 @@
+<section *ngIf="person" class="panel">
+	<div class = "panel-body">
+		<h2><i [class]="person.gender==='female' ? 'ion-female' : (person.gender==='male' ? 'ion-male' : 'ion-transgender')"></i> {{person.name}}</h2>
+		<i class="ion-android-calendar"></i> {{person.birthyear}}
+		<br/><strong>Position: </strong>{{person.haircolor}} <strong>Total Hours: </strong>{{person.totalHours}}
+
+	</div>
+	<div class = "panel-body">
+		<table border="2"
+		style="table-layout: fixed;
+				width: 1000px;
+				overflow:hidden;
+				word-wrap:break-word;
+				TEXT-ALIGN:  CENTER;">
+			<tr *ngFor="let story of storyList; index as i">
+				<td>{{story.id}}</td>
+				<td>{{story.name}}</td>
+				<td>
+					<input class ="form-control" name="creditlimit" required [(ngModel)]="storyNames[story.id]">
+				</td>
+				<td><button type="button" class="btn" (click)="logWork(story.id)"
+					style="width: 100%;">Log</button></td>
+				<td>{{story.hours}}</td>
+			</tr>
+		</table>
+		<br/>
+	</div>
+</section>
+
