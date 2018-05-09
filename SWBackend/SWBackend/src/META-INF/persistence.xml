@@ -10,7 +10,7 @@
 		 	<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://tiger.ceonkd3lm0ub.us-east-2.rds.amazonaws.com:3306/STARWARS"/>
             <property name="javax.persistence.jdbc.user" value="kashwath"/>
-            <property name="javax.persistence.jdbc.password" value="tigerlion"/>
+            <property name="javax.persistence.jdbc.password" value="******"/>
 
             <!--Hibernate properties-->
             <property name="hibernate.show_sql" value="false"/>

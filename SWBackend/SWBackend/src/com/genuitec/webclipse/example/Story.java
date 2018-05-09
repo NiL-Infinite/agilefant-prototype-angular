@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 @Entity
-@Table(name = "Story", schema = "STARWARS")
+@Table(name = "Story")
 public class Story implements java.io.Serializable {
 	// Fields
 
